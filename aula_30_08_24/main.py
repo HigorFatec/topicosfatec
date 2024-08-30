@@ -23,16 +23,20 @@ def exibir_intervalo(ini=0, fim=10, passo=1):
     for item in range(ini, fim, passo):
         print(item)
 
+def exibir_valores(*valores):
+    for item in valores:
+        print(item)
 
 def main():
-    # limpar_tela()
+    limpar_tela()
     # mensaguem_inicial()
     # n1 = ler_numero()
     # n2 = ler_numero()
     # print(f'\nA soma de {n1} + {n2} = {soma(n1, n2)}\n')
-    print('Exibindo intervalos do 0 ao 10')
-    exibir_intervalo(1, 10, 2)
-    print('Exibindo intervalos do 0 ao 10 com passo 2')
-    exibir_intervalo(fim = 11, passo = 2)
+    # print('Exibindo intervalos do 0 ao 10')
+    # exibir_intervalo(1, 10, 2)
+    # print('Exibindo intervalos do 0 ao 10 com passo 2')
+    # exibir_intervalo(fim = 11, passo = 2)
+    exibir_valores(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
 
 main()
